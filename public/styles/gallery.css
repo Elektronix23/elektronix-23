@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap");
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: #000000;
+}
+
+main h1 {
+	font-family: "Poppins";
+	margin: 20px 0 0;
+	font-size: 50px;
+	color: #FFD700;
+	font-weight: 400;
+}
+.image-container {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	-webkit-column-gap: 24px;
+	-moz-column-gap: 24px;
+	column-gap: 24px;
+	padding: 0 40px;
+}
+
+.image-container div {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.image-container img {
+	height: 500px;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.image-container div:first-child img,
+.image-container div:nth-child(9) img,
+.image-container div:nth-child(7) img,
+.image-container div:nth-child(10) img {
+	height: 560px;
+}
+
+.image-container div:nth-child(5) img {
+	height: 360px;
+}
+
+.image-container div:nth-child(8) img {
+	height: 700px;
+	margin-bottom: 0;
+}
+
+.image-container div:nth-child(4) img {
+	height: 560px;
+	margin-bottom: 0;
+}
+
+.image-container div:last-child {
+	margin-bottom: 0;
+}
+
+button.filters-cta {
+	position: fixed;
+	bottom: 20px;
+	right: 45px;
+	
+	/* right: 16px;
+	bottom: 40px; */
+	height: 80px;
+	width: 80px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	cursor: pointer;
+	background: #000000;
+	color: #FFD700;
+	border: 0;
+	border-radius: 100%;
+	z-index: 999;
+}
+
+button.filters-cta span {
+	-webkit-transform: rotate(0deg) scale(1);
+	transform: rotate(0deg) scale(1);
+	-webkit-transition: linear 0.2s;
+	transition: linear 0.2s;
+	margin-top: 4px;
+	font-size: 25px;
+    font-family: "Poppins";
+}
+
+button.filters-cta:hover span {
+	-webkit-transform: rotate(45deg) scale(1);
+	transform: rotate(45deg) scale(1);
+	-webkit-transition: linear 0.2s;
+	transition: linear 0.2s;
+	margin-left: 0px;
+}
+button.filters-cta:hover  {
+	background: #000000;
+	color: #FFD700;
+}
+
+.filter-preset-1 {
+	-webkit-filter: contrast(110%) brightness(110%) saturate(130%);
+	filter: contrast(110%) brightness(110%) saturate(130%);
+}
+
+.filter-preset-2 {
+	-webkit-filter: contrast(90%) brightness(120%) saturate(85%) hue-rotate(20deg);
+	filter: contrast(90%) brightness(120%) saturate(85%) hue-rotate(20deg);
+}
+
+.filter-preset-3 {
+	-webkit-filter: contrast(90%) brightness(110%) saturate(150%)
+		hue-rotate(-10deg);
+	filter: contrast(90%) brightness(110%) saturate(150%) hue-rotate(-10deg);
+}
+
+.filter-preset-4 {
+	-webkit-filter: contrast(140%) sepia(50%);
+	filter: contrast(140%) sepia(50%);
+}
+
+.filter-preset-5 {
+	-webkit-filter: contrast(90%) brightness(110%);
+	filter: contrast(90%) brightness(110%);
+}
+
+.filter-preset-6 {
+	-webkit-filter: contrast(120%) saturate(125%);
+	filter: contrast(120%) saturate(125%);
+}
+
+.filter-preset-7 {
+	-webkit-filter: contrast(90%) sepia(20%);
+	filter: contrast(90%) sepia(20%);
+}
+
+.filter-preset-8 {
+	-webkit-filter: brightness(105%) hue-rotate(350deg);
+	filter: brightness(105%) hue-rotate(350deg);
+}
+
+.filter-preset-9 {
+	-webkit-filter: contrast(90%) brightness(120%) saturate(110%);
+	filter: contrast(90%) brightness(120%) saturate(110%);
+}
+
+.filter-preset-10 {
+	-webkit-filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%);
+	filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%);
+}
+
+.filter-preset-11 {
+	-webkit-filter: contrast(150%) saturate(110%);
+	filter: contrast(150%) saturate(110%);
+}
+
+.filter-preset-12 {
+	-webkit-filter: contrast(95%) brightness(95%) saturate(150%) sepia(25%);
+	filter: contrast(95%) brightness(95%) saturate(150%) sepia(25%);
+}
+
+.filter-preset-13 {
+	-webkit-filter: contrast(85%) brightness(110%) saturate(75%) sepia(22%);
+	filter: contrast(85%) brightness(110%) saturate(75%) sepia(22%);
+}
+
+.filter-preset-14 {
+	-webkit-filter: contrast(75%) brightness(115%) saturate(85%);
+	filter: contrast(75%) brightness(115%) saturate(85%);
+}
+
+.filter-preset-15 {
+	-webkit-filter: contrast(108%) brightness(108%) sepia(8%);
+	filter: contrast(108%) brightness(108%) sepia(8%);
+}
+
+.filter-preset-16 {
+	-webkit-filter: none !important;
+	filter: none !important;
+}
+
+@media screen and (max-width: 1023px) {
+	.image-container {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+		padding: 20px;
+	}
+
+	.image-container div:first-child img {
+		height: 400px;
+	}
+
+	.image-container div:nth-child(5) img {
+		height: 560px;
+	}
+
+	.image-container div:nth-child(8) img {
+		height: 420px;
+	}
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.image-container {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+		padding: 0;
+	}
+
+	.image-container div img {
+		height: 100vh !important;
+		width: 100vw !important;
+	}
+
+	button.filters-cta {
+		left: 50%;
+		-webkit-transform: translate(-50%);
+		transform: translate(-50%);
+		bottom: 48px;
+		right: auto;
+	}
+}
